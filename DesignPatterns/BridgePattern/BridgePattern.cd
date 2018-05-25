@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ImplementationIMessage">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BridgePattern.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Message">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAIAAgAAA=</HashCode>
+      <FileName>BridgePattern.cpp</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="implementation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SystemMessage">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>BridgePattern.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserMessage">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>BridgePattern.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EmailSender">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BridgePattern.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebServiceSender">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BridgePattern.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

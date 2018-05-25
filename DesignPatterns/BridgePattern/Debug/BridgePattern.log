@@ -1,0 +1,4 @@
+﻿  BridgePattern.cpp
+  BridgePattern.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  BridgePattern.vcxproj -> D:\C++Test\DesignPatterns\BridgePattern\Debug\BridgePattern.exe
+  BridgePattern.vcxproj -> D:\C++Test\DesignPatterns\BridgePattern\Debug\BridgePattern.pdb (Partial PDB)
