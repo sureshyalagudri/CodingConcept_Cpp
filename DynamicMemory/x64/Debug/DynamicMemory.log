@@ -1,7 +1,5 @@
-﻿  Class1.cpp
-  Generating Code...
-  Compiling...
-  First.cpp
-  Generating Code...
+﻿  Mystring.cpp
+d:\codingconcepts\c++\codingconcept_cpp\dynamicmemory\mystring.cpp(27): warning C4267: 'initializing': conversion from 'size_t' to 'char', possible loss of data
+d:\codingconcepts\c++\codingconcept_cpp\dynamicmemory\mystring.cpp(32): warning C4267: 'initializing': conversion from 'size_t' to 'char', possible loss of data
   DynamicMemory.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\DynamicMemory\x64\Debug\DynamicMemory.exe
   DynamicMemory.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\DynamicMemory\x64\Debug\DynamicMemory.pdb (Full PDB)

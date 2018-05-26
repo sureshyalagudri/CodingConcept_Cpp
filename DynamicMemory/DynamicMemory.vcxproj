@@ -81,6 +81,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -116,10 +117,12 @@
     <ClCompile Include="Class1.cpp" />
     <ClCompile Include="DynamicMemoryTest.cpp" />
     <ClCompile Include="First.cpp" />
+    <ClCompile Include="Mystring.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Class1.h" />
     <ClInclude Include="DynamicMemoryTest.h" />
+    <ClInclude Include="Mystring.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
