@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\codingconcepts\c++\codingconcept_cpp\inheritance\virtuluse.h(23): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+  Inheritance.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\Inheritance\Debug\Inheritance.exe
+  Inheritance.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\Inheritance\Debug\Inheritance.pdb (Full PDB)
