@@ -1,0 +1,4 @@
+﻿  Source.cpp
+d:\codingconcepts\c++\codingconcept_cpp\stl\source.cpp(43): warning C4018: '<': signed/unsigned mismatch
+  STL.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\STL\Debug\STL.exe
+  STL.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\STL\Debug\STL.pdb (Full PDB)
