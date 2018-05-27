@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
+#include <vector>
 #include "DiamondInheritance.h"
 #include "AbstractClass.h"
 #include "VirtulUse.h"
@@ -40,8 +41,16 @@ int main()
 	// compile time error will be shown.
 	FunctionOverload *a = new FunctionOverload();
 	a->Add(4, 5);
-	//  a->Add(4, 5.8); // Compile time error.
+	//a->Add(4, 5.8); // Compile time error.
 	a->Add(4, 5);
+
+	vector<double>dbl;
+	dbl.push_back(2.2);
+	dbl.push_back(4.2);
+	dbl.push_back(6.2);
+	dbl.push_back(8.2);
+	a->Add(dbl[0], dbl[1], dbl[2], dbl[3]); // This will give warning:warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+
 	delete a;
 
 	//  

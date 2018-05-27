@@ -10,5 +10,7 @@ public:
 	// double Add(int a, int b); //Gives compile time error 
 	int Add(int a, int b, int c);
 	double Add(int a, int b, double);
+	int Add(int a, int b, int c, int d);
+
 };
 

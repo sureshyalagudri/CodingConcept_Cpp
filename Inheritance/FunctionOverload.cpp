@@ -30,3 +30,8 @@ double FunctionOverload::Add(int a, int b, double c)
 {
 	return a + b + c;
 }
+
+int FunctionOverload::Add(int a, int b, int c, int d)
+{
+	return a + b + c + d;
+}
