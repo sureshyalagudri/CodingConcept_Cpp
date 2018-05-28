@@ -4,9 +4,11 @@
 
 Class1::Class1()
 {
+	cout << "constructor" << endl;
 }
 
 
 Class1::~Class1()
 {
+	cout << "destructor" << endl;
 }
