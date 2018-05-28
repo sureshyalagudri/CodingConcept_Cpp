@@ -8,9 +8,16 @@ using namespace std;
 
 void ThreadasFunct1(int count, string s)
 {
-	for (int i = 0; i < count; i++)
+	try
 	{
-		cout << "Eecuting Thread: " << s.c_str() << "\n" << endl;
+		for (int i = 0; i < count; i++)
+		{
+			cout << "Eecuting Thread: " << s.c_str() << "\n" << endl;
+		}
+	}
+	catch (exception ex)
+	{
+		throw ex;
 	}
 }
 
@@ -24,47 +31,54 @@ void ThreadasFunct2(int count, string s)
 
 int main()
 {
-	cout << "Main Start" << endl;
-
-	// Use Thread with Function.
-	thread t1(ThreadasFunct1, 4, "t1");
-	thread t2(ThreadasFunct2, 4, "t2");
-	thread::id  ii = t1.get_id();
-
-	t1.join();
-	t2.join();
-
-	// Use Thread with Lambda Expression.
-	auto a = [](int x, string s)
+	try
 	{
-		for (int i = 0; i < x; i++)
-			cout << s.c_str() << ": Thread is executing from Lambda Expression \n" << endl;
-	};
-	thread t3(a, 4, "t3");
-	thread t4(a, 4, "t4");
-	t3.join();
-	t4.join();
+		cout << "Main Start" << endl;
 
-	// Use Thread with class object.
-	thread t5(ThreatTest(), 4, "t5");
-	thread t6(ThreatTest(), 4, "t6");
-	t5.join();
-	t6.join();
+		// Use Thread with Function.
+		thread t1(ThreadasFunct1, 4, "t1");
+		thread t2(ThreadasFunct2, 4, "t2");
+		thread::id  ii = t1.get_id();
 
-	// Loop of thread 
-	std::thread threads[5];
-	for (int i = 0; i < 5; ++i)
-	{
-		string s = to_string(i);
-		threads[i] = std::thread(ThreadasFunct1, i + 1, s);
+		t1.join();
+		t2.join();
+
+		// Use Thread with Lambda Expression.
+		auto a = [](int x, string s)
+		{
+			for (int i = 0; i < x; i++)
+				cout << s.c_str() << ": Thread is executing from Lambda Expression \n" << endl;
+		};
+		thread t3(a, 4, "t3");
+		thread t4(a, 4, "t4");
+		t3.join();
+		t4.join();
+
+		// Use Thread with class object.
+		thread t5(ThreatTest(), 4, "t5");
+		thread t6(ThreatTest(), 4, "t6");
+		t5.join();
+		t6.join();
+
+		// Loop of thread 
+		std::thread threads[5];
+		for (int i = 0; i < 5; ++i)
+		{
+			string s = to_string(i);
+			threads[i] = std::thread(ThreadasFunct1, i + 1, s);
+		}
+
+		//Execute threads.
+		for (int i = 0; i < 5; ++i)
+		{
+			threads[i].join();
+		}
+
+		cout << "Main End" << endl;
 	}
-
-	//Execute threads.
-	for (int i = 0; i < 5; ++i)
+	catch (exception ex)
 	{
-		threads[i].join();
+		cout << ex.what()<<endl;
 	}
-
-	cout << "Main End" << endl;
 	return 0;
 }
