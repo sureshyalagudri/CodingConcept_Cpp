@@ -1,3 +1,6 @@
-﻿  Vector3D.cpp
+﻿  Source.cpp
+d:\codingconcepts\c++\codingconcept_cpp\generics\source.cpp(43): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+d:\codingconcepts\c++\codingconcept_cpp\generics\source.cpp(53): warning C4305: 'argument': truncation from 'double' to 'float'
+d:\codingconcepts\c++\codingconcept_cpp\generics\source.cpp(54): warning C4305: 'argument': truncation from 'double' to 'float'
   Generics.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\Generics\Debug\Generics.exe
   Generics.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\Generics\Debug\Generics.pdb (Full PDB)

@@ -27,6 +27,20 @@ int compvar(const void *one, const void *two)
 	return 1;
 }
 
+struct abc
+{
+	int i;
+	string name;
+};
+
+struct xyz
+{
+	int i;
+	string name;
+	int j;
+	double h;
+};
+
 int main()
 {
 #pragma region Vector
@@ -118,6 +132,20 @@ int main()
 	//sort(mymap.begin, mymap.end);
 	for (map<int, int>::iterator it2 = mymap.begin(); it2 != mymap.end(); ++it2)
 		cout << "Key: " << it2->first << " Value: " << it2->second << endl;
+
+
+	map<abc, xyz> mapz;
+
+	for (int k = 0; k < 5; k++)
+	{
+		abc a;
+		a.i = k;
+		xyz b;
+		b.i = k;
+		//mapz[a] = b;
+	}
+
+
 #pragma endregion
 
 #pragma region Stack
@@ -160,5 +188,43 @@ int main()
 	}
 
 #pragma endregion
+
+
+#pragma region Goto
+	//using go to statement
+	vector<int> myvector{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	int i = 0;
+Restart:
+	for (; i < myvector.size(); i++)
+	{
+		if (myvector[i] % 2 == 0)
+		{
+			cout << "Deleting: "<<myvector[i] << endl;
+			myvector.erase(myvector.begin() + i);
+			// After deleting it i want to restart the loop 
+			goto Restart;
+		}
+	}
+
+	cout << "Print remaining vector"<< endl;
+	int jj = myvector.size();
+	for (int i = 0; i < myvector.size(); i++)
+	{
+		cout << myvector[i]<< endl;
+	}
+/*	vector<int> myvector{ 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	for (auto i = myvector.begin(); i != myvector.end(); ++i)
+	{
+		if (*i % 2 == 0)
+		{
+			myvector.erase(i);
+			i--;
+		}
+	}*/
+
+#pragma endregion
+
+
+
 	return 0;
 }

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Singleton">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="m_instance" Type="Singleton" ManuallyRouted="true">
+      <Path>
+        <Point X="1.032" Y="2.373" />
+        <Point X="1.032" Y="3.164" />
+        <Point X="1.478" Y="3.164" />
+        <Point X="1.478" Y="2.373" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAABAEAAAEIAAAAAAACAAA=</HashCode>
+      <FileName>Singleton.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -5,15 +5,32 @@
 
 using namespace std;
 
-int main() 
+void testfunct()
+{
+	class abc
+	{
+		int a = 10;
+	};
+}
+
+struct xyz
+{
+	xyz() {};
+	xyz(int a , int b) {};
+	~xyz() {};
+	int s;
+	int func() { return 0; };
+};
+
+int main()
 {
 	cout << "Main Start" << endl;
 
 	// Only header file is sufficient 
 	// any number of parameters can be used
 	GenericTest<int> test;
-	cout<<test.Add(2, 8.2)<<endl;
-	cout<<test.Add(2 , 6, 8)<<endl;
+	cout << test.Add(2, 8.2) << endl;
+	cout << test.Add(2, 6, 8) << endl;
 
 	GenericTest<string> test1;
 	cout << test1.Add("Suresh ", "Yalagudri").c_str() << endl;
@@ -26,6 +43,10 @@ int main()
 	Vector3D v2(1.8, 8.6, 2.4);
 	GenericTest<Vector3D> testVector;
 	Vector3D v3 = testVector.Add(v1, v2);
+
+	xyz *aa= new xyz(6,7);
+	aa->func();
+
 
 	cout << "Main End" << endl;
 	return 0;

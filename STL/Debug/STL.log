@@ -1,4 +1,7 @@
 ﻿  Source.cpp
-d:\codingconcepts\c++\codingconcept_cpp\stl\source.cpp(43): warning C4018: '<': signed/unsigned mismatch
+d:\codingconcepts\c++\codingconcept_cpp\stl\source.cpp(57): warning C4018: '<': signed/unsigned mismatch
+d:\codingconcepts\c++\codingconcept_cpp\stl\source.cpp(198): warning C4018: '<': signed/unsigned mismatch
+d:\codingconcepts\c++\codingconcept_cpp\stl\source.cpp(211): warning C4018: '<': signed/unsigned mismatch
+d:\codingconcepts\c++\codingconcept_cpp\stl\source.cpp(197): warning C4102: 'start': unreferenced label
   STL.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\STL\Debug\STL.exe
   STL.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\STL\Debug\STL.pdb (Full PDB)
