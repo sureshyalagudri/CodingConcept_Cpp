@@ -1,0 +1,7 @@
+﻿  JumpSearch.cpp
+d:\codingconcepts\c++\codingconcept_cpp\algorithms\jumpsearch.cpp(16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\codingconcepts\c++\codingconcept_cpp\algorithms\jumpsearch.cpp(20): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+d:\codingconcepts\c++\codingconcept_cpp\algorithms\jumpsearch.cpp(26): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+d:\codingconcepts\c++\codingconcept_cpp\algorithms\jumpsearch.cpp(27): warning C4018: '<': signed/unsigned mismatch
+  Algorithms.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\Algorithms\Debug\Algorithms.exe
+  Algorithms.vcxproj -> D:\CodingConcepts\C++\CodingConcept_Cpp\Algorithms\Debug\Algorithms.pdb (Full PDB)
